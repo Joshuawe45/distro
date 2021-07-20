@@ -13,7 +13,7 @@ jobs:
       - name: 'Build:dockerimage'
         uses: docker/build-push-action@v1
         with:
-          context: Distroless 
+          context: ./Distroless 
           registry: ghcr.io
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GITHUB_TOKEN }}
